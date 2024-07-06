@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel - Portfolio Tailwind CSS</title>
+    <link href="dist/css/final.css" rel="stylesheet" />
+    
+    <script src="dist/js/java2.js"></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="absolute top-0   left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="index.html" class="block py-6 text-lg font-bold text-primary">DandiAjusta</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="index.html#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="index.html#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tentang Saya</a>
+                </li>
+                <li class="group">
+                  <a href="index.html#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                </li>
+                <li class="group">
+                  <a href="index.html#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
+                </li>
+                <li class="group">
+                  <a href="index.html#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+                </li>
+                <li class="group">
+                  <a href="index.html#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                    <div class="flex">
+                      <span class="mr-2 text-sm text-slate-500">light</span>
+                      <input type="checkbox" class="hidden" id="dark-toggle" />
+                      <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span class="ml-2 text-sm text-slate-500">dark</span>
+                    </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Article Section Start -->
+    <section id="article" class="pt-36 pb-20 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4 flex justify-center">
+          <div class="w-full max-w-2xl">
+            <h1 class="mb-4 text-4xl font-bold text-primary dark:text-white" style="text-align: center;">Pasukan Pengibar Bendera Pusaka</h1>
+            <div class="flex justify-center">
+              <div class="relative" style="max-width:800px">
+                <!-- Slider Controls -->
+                <div class="slider-controls button">
+                  <button class="text-white text-3xl" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="text-white text-3xl" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <!-- Slides -->
+                <img class="mySlides" src="dist/img/Tulisan/PASKIBRAKA/1.jpg" style="width:100%; display: block;">
+                <img class="mySlides" src="dist/img/Tulisan/ORTU/2.jpg" style="width:100%; display: none;">
+                <img class="mySlides" src="dist/img/Tulisan/SMA/3.jpg" style="width:100%; display: none;">
+              </div>
+            </div><br>
+            <p class="mb-4 text-lg text-secondary dark:text-white" style="text-align: justify;" id="text-custom" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris orci ipsum, efficitur a consectetur a, condimentum vestibulum mauris. Aenean luctus id arcu non vulputate. In et justo non mauris condimentum mattis. Vestibulum vitae augue interdum, vehicula est consequat, posuere tellus. Quisque malesuada vehicula ipsum, non blandit massa tincidunt in. Aenean urna dui, rutrum vitae ornare eu, condimentum sed quam. In dolor felis, efficitur ut finibus molestie, blandit non lectus. Nunc scelerisque eu velit nec accumsan. Praesent nec lacinia lectus. Integer ut velit quis sem pretium vulputate sagittis a velit. Sed pulvinar tincidunt metus, nec luctus diam. Suspendisse nec metus eleifend, imperdiet metus eu, commodo ex. Duis ex lectus, euismod non convallis et, scelerisque at purus.
+            </p>
+            <p class="mb-4 text-lg text-secondary dark:text-white" style="text-align: justify;" id="text-custom" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris orci ipsum, efficitur a consectetur a, condimentum vestibulum mauris. Aenean luctus id arcu non vulputate. In et justo non mauris condimentum mattis. Vestibulum vitae augue interdum, vehicula est consequat, posuere tellus. Quisque malesuada vehicula ipsum, non blandit massa tincidunt in. Aenean urna dui, rutrum vitae ornare eu, condimentum sed quam. In dolor felis, efficitur ut finibus molestie, blandit non lectus. Nunc scelerisque eu velit nec accumsan. Praesent nec lacinia lectus. Integer ut velit quis sem pretium vulputate sagittis a velit. Sed pulvinar tincidunt metus, nec luctus diam. Suspendisse nec metus eleifend, imperdiet metus eu, commodo ex. Duis ex lectus, euismod non convallis et, scelerisque at purus.
+            </p><br><br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Article Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-slate-800 py-2">
+      <div class="container">
+        <p class="textainer">
+            <p class="text-center text-white">Dibuat dengan <span class="text-red-500">❤️</span> oleh <a href="https://www.instagram.com/xxwafii/" target="_blank" class="text-primary">Dandi Ajusta</a> menggunakan Tailwind CSS.</p>
+          </div>
+        </footer>
+        <!-- Footer End -->
+        <script src="dist/js/script.js"></script>
+      </body>
+    </html>
